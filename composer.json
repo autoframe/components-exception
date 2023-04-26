@@ -1,11 +1,13 @@
 {
     "type": "library",
-    "localDEV": "composer dump-autoload -o",
     "name": "autoframe/component-exception",
     "description": "Core Exception Autoframe Framework",
     "license": "MIT",
     "homepage": "https://github.com/autoframe",
-    "require": {},
+    "require": {
+        "php": ">=7.4"
+    },
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Nistor Alexandru Marius",
