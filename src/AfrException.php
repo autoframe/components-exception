@@ -19,7 +19,7 @@ if(defined(__NAMESPACE__.'\SWAP_AFR_EXCEPTION')){
 
 if(!class_exists(__NAMESPACE__.'\AfrException',false)){
 
-    class AfrException extends Exception
+    class AfrException extends Exception implements Throwable
     {
         /**
          * Construct the exception. Note: The message is NOT binary safe.
