@@ -39,7 +39,7 @@ if(!class_exists(__NAMESPACE__.'\AfrException',false)){
          * @link https://php.net/manual/en/exception.tostring.php
          * @return string the string representation of the exception.
          */
-        public function __toString()
+        public function __toString(): string
         {
             return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
         }
