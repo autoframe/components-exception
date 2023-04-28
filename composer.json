@@ -7,7 +7,7 @@
     "require": {
         "php": "^7.4 || ^8.0"
     },
-    "version": "1.0.4",
+    "version": "1.0.5",
     "authors": [
         {
             "name": "Nistor Alexandru Marius",
