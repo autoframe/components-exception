@@ -7,17 +7,17 @@ on:
 name: "PHPUnit tests"
 
 permissions:
-  contents: read
+  contents: "read"
 
 jobs:
   phpunit:
     name: "Tests php ${{ matrix.php-version }}"
 
-    runs-on: ${{ matrix.operating-system }}
+    runs-on: "${{ matrix.operating-system }}"
 
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: false
         php-version:
           - "7.4"
           - "8.0"
@@ -37,9 +37,9 @@ jobs:
           php-version: "${{ matrix.php-version }}"
           # extensions: curl, mbstring, zip
           # ini-values: memory_limit=-1
-          tools: composer:v2
+          tools: "composer:v2"
 
-      - name: Install Dependencies
+      - name: "Install Dependencies"
         run: "composer install"
 
       - name: "Run tests with PHPUnit"
