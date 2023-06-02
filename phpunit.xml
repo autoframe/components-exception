@@ -3,7 +3,7 @@
 <!--   ./vendor/bin/phpunit   -->
 <phpunit colors="true" bootstrap="vendor/autoload.php">
     <testsuites>
-        <testsuite name="Unit Tests">
+        <testsuite name="Unit Tests AfrException">
             <directory>Tests/Unit</directory>
         </testsuite>
     </testsuites>

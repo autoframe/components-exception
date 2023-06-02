@@ -10,14 +10,14 @@ use Throwable;
  * If you don't like the default exception class, you can use your own:
  * define('Autoframe\Components\Exception\SWAP_AFR_EXCEPTION','..dir../CustomAfrException.php');
  */
-if(defined(__NAMESPACE__.'\SWAP_AFR_EXCEPTION')){
-    $phpInclude = constant(__NAMESPACE__.'\SWAP_AFR_EXCEPTION');
-    if(file_exists($phpInclude)){
+if (defined(__NAMESPACE__ . '\SWAP_AFR_EXCEPTION')) {
+    $phpInclude = constant(__NAMESPACE__ . '\SWAP_AFR_EXCEPTION');
+    if (file_exists($phpInclude)) {
         include_once($phpInclude);
     }
 }
 
-if(!class_exists(__NAMESPACE__.'\AfrException',false)){
+if (!class_exists(__NAMESPACE__ . '\AfrException', false)) {
 
     class AfrException extends Exception implements Throwable
     {
